@@ -1,0 +1,10 @@
+.App{
+  height: 100%;
+  background-color: #F5F6F8;
+}
+
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../Fonts/Helvetica/HelveticaRegular.ttf)
+}

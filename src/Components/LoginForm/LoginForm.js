@@ -18,7 +18,7 @@ const LoginForm = ({getMailText, getPasswordText, postAuth, auth, getToken, setT
             Cookies.set("userToken", auth.access_token)
             setToken(Cookies.get("userToken"))
         }
-        if(getToken){
+        if(Cookies.get("userToken")){
             history.push(`/order-list`)
         }
         

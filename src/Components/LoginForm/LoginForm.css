@@ -10,6 +10,12 @@
     margin-top: 25.5px;
 }
 
+@media (max-width: 419px) {
+    .login-form {
+        width: 267px;
+    }
+  }
+
 .enter-text{
     height: 58.5px;
     justify-content: center;
@@ -28,6 +34,12 @@
     margin-right: auto;
     margin-top: 16.5px;
 }
+
+@media (max-width: 419px) {
+    .inputs-form {
+        width: 234px;
+    }
+  }
 
 .pswrd-input{
     margin-top: 15px;

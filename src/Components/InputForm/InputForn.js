@@ -4,7 +4,7 @@ import {setMailText} from "../actions/index";
 import {setPasswordText} from "../actions/index";
 import "./InputForm.css";
 
-const InputForm = ({name, marginTop, className, setMailText, setPasswordText}) => {
+const InputForm = ({name, marginTop, className, setMailText, setPasswordText, type}) => {
     const [text, setText] = useState("");
     const textChange = (event, className) => {
         setText(event.target.value);
@@ -23,7 +23,7 @@ const InputForm = ({name, marginTop, className, setMailText, setPasswordText}) =
                 {name}
             </label>
             <br />
-            <input className={className} style={{marginTop: marginTop}} value={text} onChange={(event) => textChange(event, className)}/>
+            <input type={type} className={className} style={{marginTop: marginTop}} value={text} onChange={(event) => textChange(event, className)}/>
         </div>
     );
 }

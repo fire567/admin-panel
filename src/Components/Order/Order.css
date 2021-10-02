@@ -1,0 +1,191 @@
+.order-form{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.order{
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.car-pic{
+    margin-left: 21px;
+    width: 138px;
+    height: 63px;
+}
+
+.order-inf{
+    margin-left: 35px;
+    width: 307px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #889098;
+}
+
+.black-text{
+    color: #121212;
+}
+
+.order-date{
+    margin-top: 6px;
+}
+
+.order-color{
+    margin-top: 6px;
+}
+
+.checkbox-value-undefined{
+    color: #999999;
+}
+
+.checkbox-value{
+    list-style: none;
+}
+
+.checkbox-value-active{
+    list-style: none;
+}
+
+
+.checkbox-value-undefined::before{
+    list-style: none;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-active{
+    display: none;
+}
+
+.checkbox-form label::before{
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    height: 12px;
+    width: 12px;
+    
+    border: 1px solid;   
+}
+
+.checkbox-form{
+    position: relative;
+}
+
+
+/*Внешний блок*/
+.checkbox-form label::before {
+    top: 3px;
+}
+
+
+
+
+.checkbox-form-active label::before{
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    height: 12px;
+    width: 12px;
+    
+    border: 1px solid #0EC261;   
+}
+
+.checkbox-form-active label::after {
+    
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 6px;
+    border-left: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    
+    transform: rotate(-45deg);
+}
+
+.checkbox-form-active{
+    position: relative;
+}
+
+
+/*Внешний блок*/
+.checkbox-form label::before {
+    top: 3px;
+    
+}
+/*Галка*/
+.checkbox-form-active label::after {
+    position: absolute;
+    left: 3px;
+    top: 6.5px;
+}
+
+.order-price{
+    font-size: 24px;
+    line-height: 28px;
+    align-self: center;
+    width: 102px;
+}
+
+.order-options{
+    align-self: center;
+    display: flex;
+}
+
+.done-option{
+    display: flex;
+    background-color: #FFFFFF;
+    border: 0.5px solid #BECAD6;
+    border-radius: 4px 0px 0px 4px;
+    width: 71.5px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Helvetica;
+    align-items: center;
+}
+
+.cancel-option{
+    display: flex;
+    background-color: #FFFFFF;
+    border-bottom: 0.5px solid #BECAD6;
+    border-top: 0.5px solid #BECAD6;
+    border-left: none;
+    border-right: none;
+    width: 71.5px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Helvetica;
+    align-items: center;
+}
+
+.change-option{
+    display: flex;
+    background-color: #FFFFFF;
+    border: 0.5px solid #BECAD6;
+    border-radius: 0px 4px 4px 0px;
+    width: 71.5px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Helvetica;
+    align-items: center;
+}
+
+.opt-text{
+    margin-left: 3px;
+}
+
+.pic-description{
+    display: flex;
+}

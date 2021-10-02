@@ -7,7 +7,9 @@ const LoginPage = () => {
 
     return(
         <div className="login-page-form">
-            <Logo width={"44.5px"} height={"44.5px"} fontSize={"24px"} lineHeight={"28px"} marginLeft={"11.5px"}/>
+            <div className="logo">
+                <Logo width={"44.5px"} height={"44.5px"} fontSize={"24px"} lineHeight={"28px"} marginLeft={"11.5px"}/>
+            </div>
             <LoginForm />
         </div>
     )

@@ -2,9 +2,11 @@ import React, {useState} from "react";
 import {connect} from "react-redux";
 import {setMailText} from "../actions/index";
 import {setPasswordText} from "../actions/index";
+import { editCityText } from "../actions/index";
+import { addCityText } from "../actions/index";
 import "./InputForm.css";
 
-const InputForm = ({name, marginTop, className, setMailText, setPasswordText, type}) => {
+const InputForm = ({name, marginTop, className, setMailText, setPasswordText, type, editCityText, addCityText}) => {
     const [text, setText] = useState("");
     const textChange = (event, className) => {
         setText(event.target.value);
@@ -13,6 +15,12 @@ const InputForm = ({name, marginTop, className, setMailText, setPasswordText, ty
         }
         if(className === "input-pswrd" || className === "wrong-input-pswrd"){
             setPasswordText(event.target.value)
+        }
+        if(className === "city-edit"){
+            editCityText(event.target.value)
+        }
+        if(className === "add-city"){
+            addCityText(event.target.value)
         }
         
     }
@@ -31,4 +39,6 @@ const InputForm = ({name, marginTop, className, setMailText, setPasswordText, ty
 export default connect(null, {
     setMailText: setMailText,
     setPasswordText: setPasswordText,
+    editCityText: editCityText,
+    addCityText: addCityText,
 })(InputForm);

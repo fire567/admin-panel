@@ -76,3 +76,13 @@
     letter-spacing: -0.175439px;
     color: #C4183C;
 }
+
+.unathuarize-message{
+    position: absolute;
+    font-size: 10px;
+    line-height: 11px;
+    color: #C4183C;
+    letter-spacing: -0.175439px;
+    display: flex;
+    margin-top: 6px;
+}

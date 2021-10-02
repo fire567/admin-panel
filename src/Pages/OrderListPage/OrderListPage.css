@@ -1,0 +1,15 @@
+.admin-panel-form{
+    display: flex;
+    height: 100%;
+}
+
+.right-side{
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    height: 84.9%;
+}

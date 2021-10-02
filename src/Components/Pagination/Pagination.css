@@ -1,0 +1,32 @@
+.pagination-form{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    list-style: none;
+    color: #007BFF;
+    
+}
+
+.pages{
+    font-size: 15px;
+    line-height: 17px;
+    width: 32px;
+    height: 18px;
+    text-align-last: center;
+    margin-left: 7px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.active-page{
+    color: white;
+    background-color: #007BFF;
+    border-radius: 50px;
+}
+
+.prev-page{
+    margin-left: 19px;
+}

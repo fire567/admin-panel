@@ -8,3 +8,8 @@
   font-family: "Helvetica";
   src: url(../Fonts/Helvetica/HelveticaRegular.ttf)
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../Fonts/Roboto/Roboto-Regular.ttf)
+}

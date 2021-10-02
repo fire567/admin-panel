@@ -1,0 +1,15 @@
+.filter-btn{
+    width: 100px;
+    height: 40px;
+}
+
+.filter-inputs select:not(:first-child){
+    margin-left: 15px;
+}
+
+.filter-form{
+    justify-content: space-between;
+    margin-left: 22px;
+    margin-right: 22px;
+    align-items: center;
+}

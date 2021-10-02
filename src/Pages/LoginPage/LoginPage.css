@@ -1,3 +1,9 @@
 .login-page-form{
     height: 100%;
 }
+
+.logo{
+    display: flex;
+    padding-top: 12%;
+    justify-content: center;
+}

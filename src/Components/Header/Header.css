@@ -1,0 +1,100 @@
+.header-form{
+    display: flex;
+    height: 67.5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2.5px 9.5px rgba(90, 97, 105, 0.12);
+}
+
+.header-input-form{
+    display: flex;
+    flex: 1;
+    box-shadow: 0.5px 0px 0px #CACEDB, -0.5px 0px 0px #CACEDB;
+}
+
+.notifications{
+    width: 69.5px;
+    box-shadow: 0.5px 0px 0px #CACEDB, -0.5px 0px 0px #CACEDB;
+    cursor: pointer;
+}
+
+.logout-form{
+    display: flex;
+    width: 217.5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-input{
+    border: none;
+    outline:none;
+    margin-left: 9px;
+}
+
+.search-pic{
+    align-self: center;
+    margin-left: 28px;
+}
+
+.notif-pic{
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    display: flex;
+    margin-left: 22px;
+    margin-top: 21px;
+}
+
+.count-pic{
+    position: absolute;
+    z-index: 5;
+    margin-top: 35px;
+    margin-left: 37px;
+}
+
+.user-pic {
+    margin-left: 25.5px;
+}
+
+.user-pic svg {
+    border-radius: 50px;
+}
+
+.user-name{
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: -0.471429px;
+    color: #5A6169;
+    margin-left: 13px;
+}
+
+.dropdown-pic{
+    margin-left: 45px;
+}
+
+.show-dropdown{
+    display: flex;
+    position: absolute;
+    top: 67.5px;
+    width: 217.5px;
+    height: 67px;
+    background-color: #FFFFFF;
+    transform: translate(0);
+    transition: 0.05s;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-dropdown{
+    display: flex;
+    position: absolute;
+    transform: translate(-100%);
+    transition: 0.05s;
+    display: none;
+}
+
+.logout-button{
+    border: none;
+    outline: none;
+    width: 94px;
+    height: 32px;
+}

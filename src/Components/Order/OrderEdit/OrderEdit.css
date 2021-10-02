@@ -1,0 +1,88 @@
+.edit-order-form{
+    width: 800px;;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 0px rgba(90, 97, 105, 0.11), 0px 2px 4px rgba(90, 97, 105, 0.12), 0px 5px 5px rgba(90, 97, 105, 0.06), 0px 3.5px 35px rgba(90, 97, 105, 0.1);
+    border-radius: 9px;
+}
+
+.order-header{
+    font-size: 29px;
+    line-height: 33px;
+    letter-spacing: -0.725px;
+    color: #3D5170;
+    padding: 15px 0px 20px 20px;
+    border-bottom: 1px solid #BECAD6;
+}
+
+.input-date{
+    display: flex;
+    justify-content: flex-end
+}
+
+.order-edit-body{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #BECAD6;
+}
+
+.input-date-form{
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.data-input{
+    width: 276px;
+    height: 36px;
+    border: 0.5px solid #BECAD6;
+    outline:none;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 13px;
+    color: #868E96;
+    border-radius: 4px;
+}
+
+.data-input:disabled{
+    background-color: white;
+}
+
+.data-input:active::-webkit-calendar-picker-indicator{
+    visibility: visible;
+}
+
+.reset-data-btn{
+    position: absolute;
+    margin-right: 5px;
+    margin-top: 11px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.since-date{
+    padding-top: 4px;
+    margin-bottom: 10px;
+}
+
+.edit-order-btn{
+    width: 100px;
+    height: 35px;
+}
+
+.cancel-btn{
+    width: 100px;
+    height: 35px;
+}
+
+.edit-order-bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    align-items: center;
+    margin: 0px 20px;
+}

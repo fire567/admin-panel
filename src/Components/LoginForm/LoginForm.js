@@ -6,9 +6,11 @@ import {connect} from "react-redux";
 import {postAuth} from "../actions/index";
 import { setToken } from "../actions/index";
 import { useHistory  } from 'react-router-dom';
+import { reloadOrders } from "../actions/index";
 import "./LoginForm.css";
 
-const LoginForm = ({getMailText, getPasswordText, postAuth, auth, getToken, setToken}) => {
+const LoginForm = ({getMailText, getPasswordText, postAuth, auth, getToken, setToken, reloadOrders}) => {
+    const[error, setError] = useState(false)
     const[correctMailInput, setCurrectMailInput] = useState(true);
     const[correctPAsswordInput, setCurrectPasswordInput] = useState(true);
     let history = useHistory();
@@ -19,6 +21,7 @@ const LoginForm = ({getMailText, getPasswordText, postAuth, auth, getToken, setT
             setToken(Cookies.get("userToken"))
         }
         if(Cookies.get("userToken")){
+            reloadOrders(true)
             history.push(`/order-list`)
         }
         
@@ -32,6 +35,9 @@ const LoginForm = ({getMailText, getPasswordText, postAuth, auth, getToken, setT
             setCurrectPasswordInput(false)
         }else setCurrectPasswordInput(true)
         postAuth({username: getMailText, password: getPasswordText, client_secret: "4cbcea96de", client_id: "555555"})
+        if(!Cookies.get("userToken")){
+            setError(true)
+        }
        
     }
 
@@ -57,6 +63,7 @@ const LoginForm = ({getMailText, getPasswordText, postAuth, auth, getToken, setT
                 {correctMailInput === false ? errorMessage("почту") : null}
                 <div className="pswrd-input">
                     <InputForm type={"password"} name={"Пароль"} marginTop={"8.5px"} className={correctPAsswordInput === true ? "input-pswrd" : "wrong-input-pswrd"}/>
+                    {error ? <span className="unathuarize-message">Неверный логин или пароль</span> : null}
                 </div>
                 {correctPAsswordInput === false ? errorMessage("пароль") : null}
                 <div className="bottom">
@@ -82,4 +89,5 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
     postAuth: postAuth,
     setToken: setToken,
+    reloadOrders: reloadOrders,
 })(LoginForm);
